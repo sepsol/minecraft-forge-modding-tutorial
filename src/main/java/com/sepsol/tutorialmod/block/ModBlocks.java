@@ -26,6 +26,14 @@ public class ModBlocks {
                             .setId((BLOCKS.key("alexandrite_block"))))
             );
 
+    public static final RegistryObject<Block> RAW_ALEXANDRITE_BLOCK =
+            registerBlock(
+                    "raw_alexandrite_block",
+                    () -> new Block(BlockBehaviour.Properties.of()
+                            .strength(3f).requiresCorrectToolForDrops()
+                            .setId((BLOCKS.key("raw_alexandrite_block"))))
+            );
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
