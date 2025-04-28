@@ -12,7 +12,16 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Item> ALEXANDRITE =
-            ITEMS.register("alexandrite", () -> new Item(new Item.Properties().setId(ITEMS.key("alexandrite"))));
+            ITEMS.register(
+                    "alexandrite",
+                    () -> new Item(new Item.Properties().setId(ITEMS.key("alexandrite")))
+            );
+
+    public static final RegistryObject<Item> RAW_ALEXANDRITE =
+            ITEMS.register(
+                    "raw_alexandrite",
+                    () -> new Item(new Item.Properties().setId(ITEMS.key("raw_alexandrite")))
+            );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
