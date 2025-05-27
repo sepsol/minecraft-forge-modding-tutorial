@@ -1,7 +1,6 @@
 {
-  "variants": {
-    "": {
-      "model": "tutorialmod:block/alexandrite_deepslate_ore"
-    }
+  "model": {
+    "type": "minecraft:model",
+    "model": "tutorialmod:item/alexandrite_deepslate_ore"
   }
 }
