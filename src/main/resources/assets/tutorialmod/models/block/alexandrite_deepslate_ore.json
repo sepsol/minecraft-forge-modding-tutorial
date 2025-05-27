@@ -1,6 +1,6 @@
 {
-  "model": {
-    "type": "minecraft:model",
-    "model": "tutorialmod:item/alexandrite_deepslate_ore"
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/alexandrite_deepslate_ore"
   }
 }
